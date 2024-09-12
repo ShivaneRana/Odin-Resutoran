@@ -9,30 +9,66 @@
 }
 
 body{
-
-    background-color: darkorange;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-size: 16px;
 }
 
+/* this hold all the top content (logo, home,menu etc) */
 header{
     background-color: red;
     width: 100vw;
     height: 10vh;
     display: flex;
-    justify-content: space-evenlyS;
+    justify-content: space-around;
     align-items: center;
+    gap: 20vw;
+
+    /*this is just the container for menu,home, about , contact Us button */
     & > nav{
-        background-color: palegreen;
+        background-color: purple;
         display: flex;
         justify-content: space-around;
         align-items: center;
         height: 100%;
         width: 60%;
+
+        /* these are the pysical button (home,menu etc) */
+        & > button{
+            border: none;
+            background-color: transparent;
+            font-size: 1.2rem;
+            &:hover{
+                &::first-letter{
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     & > img{
         height: 100%;
         width: 5%;
+    }
+}
+
+#content{
+    height: 90vh;
+    width: 100vw;
+    background-color: lightseagreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    & > div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 90%;
+        background-color: darkorange;
+
     }
 }
