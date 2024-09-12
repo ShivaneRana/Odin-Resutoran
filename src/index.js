@@ -1,5 +1,6 @@
 import "./style.css";
 import sushi from "./images/sushi.png";
+import { displayHome} from "./home.js";
 
 const header = document.createElement("header"); //contains logo and nav
 const nav = document.createElement("nav"); // main container for button
@@ -25,3 +26,7 @@ contentContainer.append(displayContainer);
 nav.append(home,menu,about,contact);
 document.body.append(header,contentContainer);
 header.append(image,nav);
+
+home.addEventListener("click",() => {
+    displayContainer.textContent = displayHome.dis();
+})
