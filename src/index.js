@@ -25,19 +25,3 @@ contentContainer.append(displayContainer);
 nav.append(home,menu,about,contact);
 document.body.append(header,contentContainer);
 header.append(image,nav);
-
-home.addEventListener("click",() => {
-    displayContainer.textContent = "Home button was pressed";
-})
-
-menu.addEventListener("click",() => {
-    displayContainer.textContent = "Menu button was pressed";
-})
-
-about.addEventListener("click",() => {
-    displayContainer.textContent = "About button was pressed";
-})
-
-contact.addEventListener("click",() => {
-    displayContainer.textContent = "Contact button was pressed";
-})
