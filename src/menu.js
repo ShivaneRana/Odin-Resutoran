@@ -1,6 +1,6 @@
 const displayMenu = (function(){
     const dis = function(){
-       return "Menu.js"; 
+       return "Menu.js loaded"; 
     }
 
     return {dis};

@@ -19,15 +19,17 @@ body{
 
 /* this hold all the top content (logo, home,menu etc) */
 header{
-
-    width: 100vw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: red;
 
     /*this is just the container for menu,home, about , contact Us button */
     & > nav{
+        background-color: lightsteelblue;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -39,7 +41,8 @@ header{
         & > button{
             border: none;
             background-color: transparent;
-            font-size: 1.2rem;
+            font-size: 1rem;
+            cursor: pointer;
             &:hover{
                 &::first-letter{
                     text-decoration: underline;
@@ -49,6 +52,7 @@ header{
     }
 
     & > img{
+        background-color: darkblue;
         height: 100%;
         width: 5%;
         margin-left: 5vw;
@@ -56,18 +60,16 @@ header{
 }
 
 .contentContainer{
-    height: 90vh;
+    height: 80vh;
     width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
     
     & > .displayContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 90%;
         height: 95%;
         background-color: darkorange;
+        border-radius: 15px;
     }
 }

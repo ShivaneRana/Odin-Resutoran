@@ -24,13 +24,6 @@ about.textContent = "About";
 contact.textContent = "Contact Us";
 image.src = sushi;
 
-// append all stuff to respective container
-contentContainer.append(displayContainer);
-nav.append(home,menu,about,contact);
-document.body.append(header,contentContainer);
-header.append(image,nav);
-displayContainer.append(displayHome.dis());
-
 home.addEventListener("click",() => {
     displayContainer.textContent = displayHome.dis();
 })
@@ -46,3 +39,10 @@ about.addEventListener("click",() => {
 contact.addEventListener("click",() => {
     displayContainer.textContent = displayContact.dis();
 })
+
+// append all stuff to respective container
+contentContainer.append(displayContainer);
+nav.append(home,menu,about,contact);
+document.body.append(header,contentContainer);
+header.append(image,nav);
+displayContainer.append(displayHome.dis()); // loads the home.js by default
