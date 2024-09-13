@@ -1,5 +1,5 @@
 import "./style.css";
-import sushi from "./images/sushi.png";
+import sushi from "./images/KOBE-black.svg";
 import { displayHome} from "./home.js";
 import { displayAbout } from "./about.js";
 import { displayContact } from "./contact.js";
