@@ -1,9 +1,9 @@
-const displayHome = (function(){
+const displayAbout = (function(){
     const dis = function(){
-       return "About button was pressed and its content was loaded from another js with the help of import"; 
+       return "About.js loaded"; 
     }
 
     return {dis};
 })();
 
-export {displayHome};
+export {displayAbout};

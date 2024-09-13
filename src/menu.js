@@ -1,9 +1,9 @@
-const displayHome = (function(){
+const displayMenu = (function(){
     const dis = function(){
-       return "Home button was pressed and its content was loaded from another js with the help of import"; 
+       return "Menu.js"; 
     }
 
     return {dis};
 })();
 
-export {displayHome};
+export {displayMenu};

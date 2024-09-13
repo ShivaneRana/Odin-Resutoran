@@ -1,6 +1,9 @@
 import "./style.css";
 import sushi from "./images/sushi.png";
 import { displayHome} from "./home.js";
+import { displayAbout } from "./about.js";
+import { displayContact } from "./contact.js";
+import { displayMenu } from "./menu.js";
 
 const header = document.createElement("header"); //contains logo and nav
 const nav = document.createElement("nav"); // main container for button
@@ -26,7 +29,20 @@ contentContainer.append(displayContainer);
 nav.append(home,menu,about,contact);
 document.body.append(header,contentContainer);
 header.append(image,nav);
+displayContainer.append(displayHome.dis());
 
 home.addEventListener("click",() => {
     displayContainer.textContent = displayHome.dis();
+})
+
+menu.addEventListener("click",() => {
+    displayContainer.textContent = displayMenu.dis();
+})
+
+about.addEventListener("click",() => {
+    displayContainer.textContent = displayAbout.dis();
+})
+
+contact.addEventListener("click",() => {
+    displayContainer.textContent = displayContact.dis();
 })
