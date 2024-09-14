@@ -25,7 +25,7 @@ contact.textContent = "Contact Us";
 image.src = sushi;
 
 home.addEventListener("click",() => {
-
+    
 })
 
 menu.addEventListener("click",() => {
