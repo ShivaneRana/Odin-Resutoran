@@ -1,4 +1,8 @@
 import "./home.css";
+import image1 from "./images/1.jpg";
+import image2 from "./images/2.jpg";
+import image3 from "./images/3.jpg";
+import image4 from "./images/4.jpg";
 
 const displayHome = (function(){
     console.log("Home.js was loaded")
@@ -24,7 +28,23 @@ const displayHome = (function(){
 
     const imageDiv = function(){
         const div = document.createElement("div");
+        const innerDiv = document.createElement("div");
+        const i1 = document.createElement("img");
+        const i2 = document.createElement("img");
+        const i3 = document.createElement("img");
+        const i4 = document.createElement("img");
+        i1.classList.add("uwu");
+        i2.classList.add("uwu");
+        i3.classList.add("uwu");
+        i4.classList.add("uwu");
+        i1.src = image1;
+        i2.src = image2;
+        i3.src = image3;
+        i4.src = image4;
+        innerDiv.classList.add("innerdiv");
         div.classList.add("right");
+        innerDiv.append(i1,i2,i3,i4);
+        div.append(innerDiv);
         return div;
     }
 

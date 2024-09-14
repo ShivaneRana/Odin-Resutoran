@@ -23,9 +23,12 @@ menu.textContent = "Menu";
 about.textContent = "About"; 
 contact.textContent = "Contact Us";
 image.src = sushi;
+image.classList.add("logo")
 
 home.addEventListener("click",() => {
     displayContainer.textContent = "";
+    displayContainer.append(displayHome.textDiv());
+    displayContainer.append(displayHome.imageDiv());
 })
 
 menu.addEventListener("click",() => {
