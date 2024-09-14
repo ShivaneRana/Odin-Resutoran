@@ -78,7 +78,6 @@ header{
     & > .displayContainer{
         width: 90%;
         height: 95%;
-        background-color: darkorange;
         border-radius: 15px;
         display: flex;
         justify-content: center;

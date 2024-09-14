@@ -9,10 +9,10 @@ const displayHome = (function(){
         const paragraph = document.createElement("p");
         const button = document.createElement("button");
         const header2 = document.createElement("h2");
-        header1.textContent = "Japanese Text goes here";
-        header2.textContent = "blah blah blah";
-        paragraph.textContent = "Lorem ipsum kinda stufff";
-        button.textContent = "button";
+        header1.textContent = "いらっしゃいませ";
+        header2.textContent = "Graceful design, exquisite flavors, and tranquil Japanese elegance";
+        paragraph.textContent = "Step into our Japanese-themed restaurant, where tradition meets elegance Savor authentic flavors crafted with care.Enjoy a serene atmosphere and exceptional service Your culinary journey to Japan starts here";
+        button.textContent = "order now";
         div.classList.add("left");
         header1.classList.add("header1");
         header2.classList.add("header2");
@@ -25,7 +25,6 @@ const displayHome = (function(){
     const imageDiv = function(){
         const div = document.createElement("div");
         div.classList.add("right");
-        div.textContent = "images";
         return div;
     }
 
