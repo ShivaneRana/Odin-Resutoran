@@ -1,6 +1,7 @@
 const displayContact = (function(){
+    console.log("Contact.js was loaded"); 
     const dis = function(){
-       return "Contact.js Loaded"; 
+        
     }
 
     return {dis};

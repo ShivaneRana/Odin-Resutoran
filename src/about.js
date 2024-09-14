@@ -1,6 +1,6 @@
 const displayAbout = (function(){
+    console.log("About.js was loaded");
     const dis = function(){
-       return "About.js loaded"; 
     }
 
     return {dis};
