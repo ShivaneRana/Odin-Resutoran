@@ -1,0 +1,19 @@
+.left,.right{
+
+}
+
+.left{
+    background-color: red;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.right{
+    background-color: lightblue;
+    width: 50%;
+    height: 100%;
+}

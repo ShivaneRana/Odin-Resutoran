@@ -25,24 +25,25 @@ contact.textContent = "Contact Us";
 image.src = sushi;
 
 home.addEventListener("click",() => {
-    
+    displayContainer.textContent = "";
 })
 
 menu.addEventListener("click",() => {
-
+    displayContainer.textContent = "";
 })
 
 about.addEventListener("click",() => {
+    displayContainer.textContent = "";
 
 })
 
 contact.addEventListener("click",() => {
-
+    displayContainer.textContent = "";
 })
 
 const displayHomeOnFirstLoad = function(){
-    displayContainer.append(displayHome.textDiv())
-    displayContainer.append(displayHome.imageArea())
+    displayContainer.append(displayHome.textDiv());
+    displayContainer.append(displayHome.imageDiv());
 }
 
 displayHomeOnFirstLoad();
