@@ -1,9 +1,31 @@
+@import 'color.css';
+
+@font-face {
+    font-family: 'interregular';
+    src: url('font/inter-regular-webfont.woff') format('woff'),
+         url('font/inter-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root{
+    scroll-behavior: smooth;
+    font-family: interregular,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: all 0.75s ease;
+}
+
 .left,.right{
 
 }
 
+body{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
 .left{
-    background-color: red;
     width: 50%;
     height: 100%;
     display: flex;
@@ -13,7 +35,27 @@
 }
 
 .right{
-    background-color: lightblue;
     width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header1{
+    color: var(--red);
+}
+
+.header2{
+    color: var(--black);
+}
+
+.but{
+    background-color: var(--red);
+    border: none;
+
+}
+
+.para{
+    color: var(--black);
 }
