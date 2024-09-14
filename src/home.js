@@ -15,7 +15,7 @@ const displayHome = (function(){
         const header2 = document.createElement("h2");
         header1.textContent = "いらっしゃいませ";
         header2.textContent = "Graceful design, exquisite flavors, and tranquil Japanese elegance";
-        paragraph.textContent = "Step into our Japanese-themed restaurant, where tradition meets elegance Savor authentic flavors crafted with care.Enjoy a serene atmosphere and exceptional service Your culinary journey to Japan starts here";
+        paragraph.textContent = "Step into our Japanese-themed restaurant, where tradition meets elegance Savor authentic flavors crafted with care.Enjoy a serene atmosphere and exceptional service Your culinary journey to Japan starts here.";
         button.textContent = "order now";
         div.classList.add("left");
         header1.classList.add("header1");

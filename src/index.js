@@ -20,7 +20,7 @@ displayContainer.classList.add("displayContainer");
 
 home.textContent = "Home";
 menu.textContent = "Menu";
-about.textContent = "About"; 
+about.textContent = "Our story"; 
 contact.textContent = "Contact Us";
 image.src = sushi;
 image.classList.add("logo")
