@@ -99,7 +99,6 @@ textarea{
     border: none;
     cursor: pointer;
 
-    
     &:focus{
         outline: 2px solid var(--brown);
     }
