@@ -37,7 +37,7 @@ menu.addEventListener("click",() => {
 
 about.addEventListener("click",() => {
     displayContainer.textContent = "";
-
+    displayContainer.append(displayAbout.imageDiv());
 })
 
 contact.addEventListener("click",() => {
@@ -46,7 +46,7 @@ contact.addEventListener("click",() => {
 
 
 const displayHomeOnFirstLoad = function(){
-    displayContainer.append(displayAbout.imageDiv());
+    
 }
 
 displayHomeOnFirstLoad();

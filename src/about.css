@@ -14,26 +14,41 @@
     transition: all 0.50s ease;
 }
 
+body{
+    font-size: 16px;
+}
+
 *{
     margin: 0;
     padding: 0;
 }
 
 .divv{
-    background-color: var(--brown);
-    width: 80%;
+    background-color: var(--darkSkin);
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 4px dashed;
 }
 
 .innerDiv{
     width: 60%;
     height: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: whitesmoke;
+    display: grid;
+    grid-template:1fr 3fr / 1fr;
+    justify-items: center;
+    outline: 2px dashed black;
+}
+
+.heading{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+.para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    line-height: 1.3rem;
 }
