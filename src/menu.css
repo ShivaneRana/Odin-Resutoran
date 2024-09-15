@@ -18,3 +18,57 @@
     margin: 0;
     padding: 0;
 }
+
+body{
+    font-size: 16px;
+}
+
+.mainContainer{
+    padding: 10px;
+    background-color: var(--darkSkin);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,200px);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divdiv{
+    width: 180px;
+    height: 220px;
+    outline: 1px solid;
+    padding: 5px;
+    background-color: white;
+    box-shadow: var(--brown) 10px 10px;
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.imageimage{
+    grid-row: 1 / 7;
+    grid-column: 1 / 4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.name{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.price{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+    grid-column: 3 / 4;
+}

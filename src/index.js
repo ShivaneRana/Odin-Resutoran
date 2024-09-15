@@ -33,6 +33,7 @@ home.addEventListener("click",() => {
 
 menu.addEventListener("click",() => {
     displayContainer.textContent = "";
+    displayContainer.append(displayMenu.mainDis());
 })
 
 about.addEventListener("click",() => {
@@ -48,8 +49,7 @@ contact.addEventListener("click",() => {
 
 const displayHomeOnFirstLoad = function(){
     displayContainer.textContent = "";
-    displayContainer.append(displayHome.textDiv());
-    displayContainer.append(displayHome.imageDiv());
+    displayContainer.append(displayMenu.mainDis());
 }
 
 displayHomeOnFirstLoad();
