@@ -1,4 +1,4 @@
 # Odin-Resutoran
-A webpage about japanese themed restaurant.
 
-uwu
+A japanese theme styles restaurant made using HTML,CSS and Javascript, using webpack bundler.
+
