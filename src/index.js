@@ -21,7 +21,7 @@ displayContainer.classList.add("displayContainer");
 home.textContent = "Home";
 menu.textContent = "Menu";
 about.textContent = "Our story"; 
-contact.textContent = "Contact Us";
+contact.textContent = "Get in touch";
 image.src = sushi;
 image.classList.add("logo")
 
@@ -42,11 +42,13 @@ about.addEventListener("click",() => {
 
 contact.addEventListener("click",() => {
     displayContainer.textContent = "";
+    displayContainer.append(displayContact.displayForm());
 })
 
 
 const displayHomeOnFirstLoad = function(){
-    
+    displayContainer.textContent = "";
+    displayContainer.append(displayContact.displayMain())
 }
 
 displayHomeOnFirstLoad();
