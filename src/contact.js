@@ -6,10 +6,30 @@ const displayContact = (function(){
     const displayForm = function(){
         const div = document.createElement("div");
         const form = document.createElement("form");
-        div.append(form);
+        const name = document.createElement("input");
+        const email = document.createElement("input");
+        const phone = document.createElement("input");
+        const message = document.createElement("textarea");
+        const submit = document.createElement("button");
+        submit.classList.add("submit")
+
+        // minor edit for all the inputs
+        submit.textContent = "Submit";
+        name.setAttribute("placeholder","name");
+        name.setAttribute("type","text");
+
+        email.setAttribute("placeholder","xyz@gmail.com");
+        email.setAttribute("type","email");
+
+        phone.setAttribute("placeholder","12345678");
+        phone.setAttribute("type","number")
+        message.setAttribute("placeholder","Message goes here");
+
+        form.append(name,email,phone,message);
+        form.append(submit);
         div.classList.add("formContainer");
-        div.textContent = "asdfsadf";
         form.classList.add("formform");
+        div.append(form);
         return div;
     }
 

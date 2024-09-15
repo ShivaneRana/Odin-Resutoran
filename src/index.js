@@ -42,13 +42,14 @@ about.addEventListener("click",() => {
 
 contact.addEventListener("click",() => {
     displayContainer.textContent = "";
-    displayContainer.append(displayContact.displayForm());
+    displayContainer.append(displayContact.displayMain());
 })
 
 
 const displayHomeOnFirstLoad = function(){
     displayContainer.textContent = "";
-    displayContainer.append(displayContact.displayMain())
+    displayContainer.append(displayHome.textDiv());
+    displayContainer.append(displayHome.imageDiv());
 }
 
 displayHomeOnFirstLoad();
