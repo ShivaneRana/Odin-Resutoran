@@ -44,7 +44,9 @@ contact.addEventListener("click",() => {
     displayContainer.textContent = "";
 })
 
+
 const displayHomeOnFirstLoad = function(){
+    displayContainer.append(displayAbout.imageDiv());
 }
 
 displayHomeOnFirstLoad();
