@@ -14,6 +14,11 @@ const menu = document.createElement("button");
 const about = document.createElement("button");
 const contact = document.createElement("button");
 const image = document.createElement("img"); // brand logo
+image.style.cursor = "pointer";
+
+image.addEventListener("click",() => {
+    home.click();
+})
 
 contentContainer.classList.add("contentContainer");
 displayContainer.classList.add("displayContainer");
@@ -49,7 +54,8 @@ contact.addEventListener("click",() => {
 
 const displayHomeOnFirstLoad = function(){
     displayContainer.textContent = "";
-    displayContainer.append(displayMenu.mainDis());
+    displayContainer.append(displayHome.textDiv());
+    displayContainer.append(displayHome.imageDiv());
 }
 
 displayHomeOnFirstLoad();
