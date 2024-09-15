@@ -39,11 +39,12 @@ body{
     height: 220px;
     outline: 1px solid;
     padding: 5px;
-    background-color: white;
+    background-color: var(--darkRed);
     box-shadow: var(--brown) 10px 10px;
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr/ 1fr 1fr 1fr;
     gap: 5px;
+    cursor: pointer;
 }
 
 .imageimage{
