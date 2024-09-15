@@ -83,6 +83,7 @@ input{
     padding: 10px;
     outline: none;
     border: none;
+    cursor: pointer;
 
     &:focus{
         outline: 2px solid var(--brown);
@@ -96,6 +97,7 @@ textarea{
     resize: none;
     outline: none;
     border: none;
+    cursor: pointer;
 
     &:focus{
         outline: 2px solid var(--brown);
